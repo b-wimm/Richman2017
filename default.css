@@ -61,7 +61,6 @@
 	.container
 	{
 		margin: 0px auto;
-		width: 1200px;
 	}
 
 
@@ -314,7 +313,7 @@
 
 	#header-wrapper
 	{
-		overflow: hidden;
+		overflow: auto;
 		background: #2056ac;
 	}
 
@@ -422,7 +421,7 @@
 
 	.wrapper
 	{
-		overflow: hidden;
+		overflow: auto;
 		padding: 0em 0em 5em 0em;
 		background: #FFF;
 	}
@@ -434,7 +433,7 @@
 
 	#wrapper2
 	{
-		overflow: hidden;
+		overflow: auto;
 		background: #F3F3F3;
 		padding: 5em 0em;
 		text-align: center;
@@ -454,8 +453,7 @@
 
 	#welcome
 	{
-		overflow: hidden;
-		width: 1000px;
+		overflow: auto;
 		padding: 2em 100px 0em 100px;
 		text-align: center;
 	}
@@ -480,7 +478,7 @@
 
 	#page-wrapper
 	{
-		overflow: hidden;
+		overflow: auto;
 		background: #2F1E28;
 		padding: 3em 0em 6em 0em;
 		text-align: center;
@@ -518,7 +516,7 @@
 
 	#footer
 	{
-		overflow: hidden;
+		overflow: auto;
 		padding: 5em 0em;
 		background: #E3F0F7;
 		text-align: center;
@@ -554,7 +552,7 @@
 
 	#copyright
 	{
-		overflow: hidden;
+		overflow: auto;
 		padding: 5em 0em;
 		border-top: 20px solid rgba(255,255,255,0.08);
 		text-align: center;
@@ -758,17 +756,14 @@
 		text-align: center;
 		color: #FFFFFF;
 	}
-/*********************************************************************************/
-/*   Mobile Stuff that might work                                                */
-/*********************************************************************************/
 
-	@media screen and (max-width: 480px)
+    @media screen and (max-width: 480px)
 	{
-        	#banner
+        #banner
 		{
 			display: none;
 		}
-		
+        
 		#footer
 		{
 			display: none;
@@ -777,7 +772,7 @@
 		#welcome
 		{
 			overflow: auto;
-			width: 420px;
+            padding: 2em 20px 0em 20px;
 		}
 		
 		#copyright
@@ -785,4 +780,3 @@
 			overflow: auto;
 		}
 	}
-
