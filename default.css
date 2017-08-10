@@ -764,7 +764,24 @@
 
 	@media (max-width: 480px)
 	{
-        	body{
+        	#banner
+		{
+			display: none;
+		}
+		
+		#footer
+		{
+			display: none;
+		}
+		
+		#welcome
+		{
+			overflow: auto;
+			width: 480;
+		}
+		
+		#copyright
+		{
 			overflow: auto;
 		}
 	}
