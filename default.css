@@ -376,9 +376,12 @@
 
 	#menu ul
 	{
-		display: inline-block;
 		padding: 0em 2em;
 		text-align: center;
+		
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 	}
 
 	#menu li
@@ -783,7 +786,28 @@
 		{
 			display: none;
 		}
-        
+		
+		#menu
+		{
+			/* Don't constrain menu height on mobile */
+			height: initial;
+		}
+		
+		#menu ul
+		{
+			/* Vertical menu on mobile */
+			flex-direction: column;
+			justify-content: center;
+		}
+		
+		#menu li a, #menu li span
+		{
+			/* Make nav buttons take up more room on mobile */
+			width: 100%;
+			/* Include padding in the width */
+			box-sizing: border-box;
+		}
+		
 		#footer .container
 		{
 			flex-direction: column;
