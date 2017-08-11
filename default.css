@@ -331,6 +331,13 @@
 		padding: 4em 0em 2em 0em;
 	}
 
+    #logo img
+    {
+        /* Fluid width */
+        max-width: 555px;
+        width: 100%;
+    }
+
 	#logo h1
 	{
 		display: block;
@@ -413,6 +420,16 @@
 	{
 		padding-top: 2em;
 	}
+
+	#banner img
+    {
+        /* Center the image */
+        margin: 0 auto;
+        display: block;
+        /* Fluid width */
+        max-width: 1200px;
+        width: 100%;
+    }
 
 /*********************************************************************************/
 /* Wrapper                                                                       */
