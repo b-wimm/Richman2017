@@ -313,7 +313,6 @@
 
 	#header-wrapper
 	{
-		overflow: auto;
 		background: #2056ac;
 	}
 
@@ -329,6 +328,13 @@
 	#logo
 	{
 		padding: 4em 0em 2em 0em;
+	}
+
+	#logo img
+	{
+		/* Fluid width */
+		max-width: 555px;
+		width: 100%;
 	}
 
 	#logo h1
@@ -370,9 +376,12 @@
 
 	#menu ul
 	{
-		display: inline-block;
 		padding: 0em 2em;
 		text-align: center;
+		
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 	}
 
 	#menu li
@@ -412,6 +421,16 @@
 	#banner
 	{
 		padding-top: 2em;
+	}
+
+	#banner img
+	{
+		/* Center the image */
+		margin: 0 auto;
+		display: block;
+		/* Fluid width */
+		max-width: 1200px;
+		width: 100%;
 	}
 
 /*********************************************************************************/
@@ -523,14 +542,18 @@
 	}
 
 
+	#footer .container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
 
 	#footer .fbox1,
 	#footer .fbox2,
 	#footer .fbox3
 	{
-		float: left;
 		width: 320px;
-		padding: 0px 40px 0px 40px;
+		padding: 1em;
 	}
 
 	#footer .icon
@@ -763,10 +786,32 @@
 		{
 			display: none;
 		}
-        
-		#footer
+		
+		#menu
 		{
-			display: none;
+			/* Don't constrain menu height on mobile */
+			height: initial;
+		}
+		
+		#menu ul
+		{
+			/* Vertical menu on mobile */
+			flex-direction: column;
+			justify-content: center;
+		}
+		
+		#menu li a, #menu li span
+		{
+			/* Make nav buttons take up more room on mobile */
+			width: 100%;
+			/* Include padding in the width */
+			box-sizing: border-box;
+		}
+		
+		#footer .container
+		{
+			flex-direction: column;
+			align-items: center;
 		}
 		
 		#welcome
