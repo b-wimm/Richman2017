@@ -202,6 +202,22 @@
 		width: auto;
 	}
 
+	.content-image-left img
+   	{
+     		max-width: 320px;
+		width: 100%;
+        	float: left;
+        	padding: 0em 2em 2em 0em;
+        }
+
+    	.content-image-right img
+    	{
+        	max-width: 320px;
+		width: 100%;
+        	float: right;
+        	padding: 0em 0em 2em 2em;
+    	}
+
 /*********************************************************************************/
 /* List Styles                                                                   */
 /*********************************************************************************/
@@ -333,7 +349,7 @@
 	#logo img
 	{
 		/* Fluid width */
-		max-width: 320px;
+		max-width: 666px;
 		width: 100%;
 	}
 
