@@ -798,7 +798,12 @@
 
     @media screen and (max-width: 480px)
 	{
-        #banner
+        	#banner
+		{
+			display: none;
+		}
+		
+		.content-image-right
 		{
 			display: none;
 		}
@@ -833,7 +838,7 @@
 		#welcome
 		{
 			overflow: auto;
-            padding: 2em 20px 0em 20px;
+            		padding: 2em 20px 0em 20px;
 		}
 		
 		#copyright
